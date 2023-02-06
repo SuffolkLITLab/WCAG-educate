@@ -1,2 +1,2 @@
 # WCAG-RD
-Repo for the WCAG Reference Document materials 
+Location for the WCAG Reference Document materials 
