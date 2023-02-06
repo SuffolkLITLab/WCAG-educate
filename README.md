@@ -1,5 +1,5 @@
-# WCAG-RD
-Location for the WCAG Reference Document materials 
+# WCAG Reference Document
+<b>Location for the WCAG Reference Document materials</b>
 
 <a href="https://regisacosta.github.io/WCAG-RD/WCAGRD.html"> Click Here </a> for WCAG Reference Doc in Browser
 
