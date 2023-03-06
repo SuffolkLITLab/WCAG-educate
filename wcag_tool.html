@@ -5,6 +5,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+strong {
+  font-size: 120%
+}
+strong1{
+  font-size: 1.6em;
+}
 li{
 font-size: 14px;
 font-family: times;
@@ -74,22 +80,21 @@ width: 90%;
   width: 90%;
 }
 .resizing_text_example{
-text-align: center;
+padding-top: 10px;
+padding-left: 10px;
+text-align: left;
 border: 3px solid;
 font-size: 14px;
 color: white;
 background-color: green;
 font-family: courier;
-width: 60%;
+width: 70%;
 }
 .orientation{
 }
 .images_of_text{
-
 }
-
 .reflow{
-
 }
 </style>
 
@@ -119,11 +124,15 @@ width: 60%;
     <h1>Resize Text (Level AA)</h1>
     <h2>The goal of this Success Criterion is to make sure that visually rendered text, including text-based controls, can be successfully scaled so that people with mild visual impairments can read it without the aid of assistive technology like a screen magnifier. Text-based controls are text characters that have been displayed so they can be seen, as opposed to text characters that are still in data form like ASCII. All of the web page's content may benefit from scaling for users, but text is the most important.</h2>
     <p> In order for the user to test this criterion, they have to inspect the source code of the webpage and identify some conforming features. Here are some examples of what to look for:</p>
-    <p> 1. Percent font sizes in CSS </p>
-    <div span class="resizing_text_example"> strong {font-size: 120%} <br> ... <br> {h1} Letting the {strong}user{/strong} control text size{/h1}
+    <p> 1. Percent font sizes in <strong>CSS.</strong> Notice this change in size. Inspect the source to see why! What you might see is produced below.</p>
+    <div span class="resizing_text_example"> strong {font-size: 120%} <br><br> ... <br> <br> {p} 1. Percent font sizes in {strong}CSS{}/strong} (Note this change in size. Inspect the source to see why!){/p} <br><br>...<br><br>
   </div>
-
+    <p> 2. Em font sizes in <strong1>CSS.</strong1> Notice this change in size. Inspect the source to see why! What you might see is produced below.</p>
+    <div span class="resizing_text_example"> strong {font-size: 1.6em} <br><br> ... <br> <br> {p} 1. Percent font sizes in {strong}CSS{}/strong} (Note this change in size. Inspect the source to see why!){/p} <br><br>...<br><br>
+    </div>
+    <br>
 </div>
 </div>
+<br>
 </body>
 </html>
