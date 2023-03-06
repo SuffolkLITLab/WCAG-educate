@@ -10,6 +10,9 @@ font-size: 24px;
 font-family: sans-serif;
 width: auto;
 }
+.container1{
+  border-top: 1px solid;
+}
 .container{
   border-bottom: 1px solid;
   border-top: 1px solid;
@@ -17,34 +20,42 @@ width: auto;
 .color_contrast h1{
 font-size: 16px;
 font-family: sans-serif;
-width: auto;
+width: 90%;
 }
 .color_contrast h2{
 font-size: 14px;
 font-family: times;
-width: auto;
+width: 90%;
 }
 .color_contrast p{
 font-size: 14px;
 font-family: times;
-width: auto;
+width: 90%;
 }
 .color_contrast_nc{
 font-size: 14px;
-color: #ADD8E6;
+color: #0000FF;
 background-color: #00008B;
 font-family: times;
 width: 50%;
 padding: 10px;
+}
+.resizing_text h1{
+  font-size: 16px;
+  font-family: sans-serif;
+  width: 90%;
+}
+.resizing_text h2{
+font-size: 14px;
+font-family: times;
+width: 90%;
 }
 .orientation{
 }
 .images_of_text{
 
 }
-.resizing_text{
 
-}
 .reflow{
 
 }
@@ -56,7 +67,7 @@ padding: 10px;
   Accessibility Tool
 </div>
 <br>
-<div class="container">
+<div class="container1">
   <div class="color_contrast">
   <h1>Contrast (Minimum) (Level AA) </h1>
   <h2> Hue and saturation have little to no impact on readability, as measured by reading performance, in those without color impairments (Knoblauch et al., 1991). Luminance contrast can be slightly impacted by color deficits. So that those with color vision impairments will also have sufficient contrast between the text and the backdrop, the recommendation's contrast calculation does not take color into account. Excluded is ornamental text that provides no information. For instance, it won’t need to meet this requirement if random words are used to form a background and the words can be swapped out or rearranged without changing their meaning.</h2>
@@ -65,6 +76,12 @@ padding: 10px;
     This text is an example of nonconforming color contrast
   </div>
   <br>
+  </div>
+</div>
+<div class="container">
+  <div class="resizing_text">
+    <h1>Resize Text (Level AA)</h1>
+    <h2>The goal of this Success Criterion is to make sure that visually rendered text, including text-based controls, can be successfully scaled so that people with mild visual impairments can read it without the aid of assistive technology like a screen magnifier. Text-based controls are text characters that have been displayed so they can be seen, as opposed to text characters that are still in data form like ASCII. All of the web page's content may benefit from scaling for users, but text is the most important.</h2>
   </div>
 </div>
 </body>
