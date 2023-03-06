@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Welcome</title>
+<title>WCAG Accessibility Tool</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -32,13 +32,21 @@ font-size: 14px;
 font-family: times;
 width: 90%;
 }
-.color_contrast_nc{
+span.color_contrast_nc{
 font-size: 14px;
 color: #0000FF;
 background-color: #00008B;
 font-family: times;
 width: 50%;
-padding: 10px;
+padding: 5px;
+}
+span.color_contrast_con{
+font-size: 14px;
+color: #FFFFFF;
+background-color: #00008B;
+font-family: times;
+width: 50%;
+padding: 5px;
 }
 .resizing_text h1{
   font-size: 16px;
@@ -71,10 +79,9 @@ width: 90%;
   <div class="color_contrast">
   <h1>Contrast (Minimum) (Level AA) </h1>
   <h2> Hue and saturation have little to no impact on readability, as measured by reading performance, in those without color impairments (Knoblauch et al., 1991). Luminance contrast can be slightly impacted by color deficits. So that those with color vision impairments will also have sufficient contrast between the text and the backdrop, the recommendation's contrast calculation does not take color into account. Excluded is ornamental text that provides no information. For instance, it won’t need to meet this requirement if random words are used to form a background and the words can be swapped out or rearranged without changing their meaning.</h2>
-  <u><p> Nonconforming Example</u></p>
-  <div class="color_contrast_nc">
-    This text is an example of nonconforming color contrast
-  </div>
+  <u><p> Nonconforming Example</u>:  <span class="color_contrast_nc">This text is an example of nonconforming color contrast</span class="color_contrast_nc"></p>
+<br>
+  <p><u>Conforming Example</u>:  <span class="color_contrast_con">This text is an example of conforming color contrast </span class="color_contrast_con"></p>
   <br>
   </div>
 </div>
