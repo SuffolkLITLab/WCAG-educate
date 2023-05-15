@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WCAG Accessibility Tool</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+strong {
+  font-size: 120%
+}
+strong1{
+  font-size: 1.6em;
+}
+li{
+  font-size: 14px;
+  font-family: times;
+  margin-left: 10px;
+}
+.page_title h1{
+  font-size: 24px;
+  font-family: sans-serif;
+  width: auto;
+}
+.page_title p{
+  font-size: 20px;
+  font-family: sans-serif;
+  width: auto;
+}
+.container1{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.container{
+  border-bottom: 1px solid;
+}
+.page_intro h1{
+  font-size: 16px;
+  font-family: sans-serif;
+  width: 90%;
+}
+.page_intro h2{
+  font-size: 14px;
+  font-family: times;
+  width: 90%;
+}
+.color_contrast h1{
+  font-size: 16px;
+  font-family: sans-serif;
+  width: 90%;
+}
+.color_contrast h2{
+  font-size: 14px;
+  font-family: times;
+  width: 90%;
+}
+.color_contrast p{
+  font-size: 14px;
+  font-family: times;
+  width: 90%;
+}
+span.color_contrast_nc{
+  font-size: 14px;
+  color: #0000FF;
+  background-color: #00008B;
+  font-family: times;
+  width: 50%;
+  padding: 5px;
+}
+span.color_contrast_con{
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #00008B;
+  font-family: times;
+  width: 50%;
+  padding: 5px;
+}
+.resizing_text h1{
+  font-size: 16px;
+  font-family: sans-serif;
+  width: 90%;
+}
+.resizing_text h2{
+  font-size: 14px;
+  font-family: times;
+  width: 90%;
+}
+.resizing_text p{
+  font-size: 14px;
+  font-family: times;
+  width: 90%;
+}
+.resizing_text_example{
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: left;
+  border: 3px solid;
+  font-size: 14px;
+  color: white;
+  background-color: green;
+  font-family: courier;
+  width: 70%;
+}
+.resizing_text_fail{
+
+}
+.orientation{
+}
+.images_of_text{
+}
+.reflow{
+}
+</style>
+
+</head>
+<body>
+<div class="page_title">
+  <h1>WCAG Accessibility Tool</h1>
+  <p> The purpose of this webpage is to educate users on the WCAG criterion points by providing a brief explanation of each point and by providing some examples of what it looks like for a page to be conforming or nonconforming.</p>
+</div>
+<br>
+<div class="container1">
+  <div class="page_intro">
+  <h1> Understanding the Web Content Accessibility Guidelines (WCAG)</h1>
+  <h2> Created by the World Wide Web Consortium (W3C), these guidelines were created to establish an international standard to ensure that accessibility accomodations are being met. </h2>
+</div>
+</div>
+<br>
+<div class="container">
+  <div class="color_contrast">
+  <h1>Contrast (Minimum) (Level AA) </h1>
+  <h2> Hue and saturation have little to no impact on readability, as measured by reading performance, in those without color impairments (Knoblauch et al., 1991). Luminance contrast can be slightly impacted by color deficits. So that those with color vision impairments will also have sufficient contrast between the text and the backdrop, the recommendation's contrast calculation does not take color into account. Excluded is ornamental text that provides no information. For instance, it won’t need to meet this requirement if random words are used to form a background and the words can be swapped out or rearranged without changing their meaning.</h2>
+  <u><p> Nonconforming Example</u>:  <span class="color_contrast_nc">This text is an example of nonconforming color contrast</span class="color_contrast_nc"></p>
+<br>
+  <p><u>Conforming Example</u>:  <span class="color_contrast_con">This text is an example of conforming color contrast </span class="color_contrast_con"></p>
+  <br>
+  <p><b><i>Testing Procedure</b></i>: Here is an example of some ways that color contrast can be tested when conducting an audit</p>
+  <li>See if there are any contrast errors in when using an automated auditing tool. </li>
+  <li>Ensure that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text. </li>
+  <br>
+  </div>
+</div>
+<div class="container">
+  <div class="resizing_text">
+    <h1>Resize Text (Level AA)</h1>
+    <h2>The goal of this Success Criterion is to make sure that visually rendered text, including text-based controls, can be successfully scaled so that people with mild visual impairments can read it without the aid of assistive technology like a screen magnifier. Text-based controls are text characters that have been displayed so they can be seen, as opposed to text characters that are still in data form like ASCII. All of the web page's content may benefit from scaling for users, but text is the most important.</h2>
+    <p> In order for the user to test this criterion, they have to inspect the source code of the webpage and identify some conforming features. Here are some examples of what to look for:</p>
+    <p> 1. Percent font sizes in <strong>CSS.</strong> Notice this change in size. Inspect the source to see why! What you might see is produced below.</p>
+    <div span class="resizing_text_example"> strong {font-size: 120%} <br><br> ... <br> <br> {p} 1. Percent font sizes in {strong}CSS{}/strong} Notice this change in size. Inspect the source to see why! What you might see is produced below.{/p} <br><br>...<br><br>
+  </div>
+    <p> 2. Em font sizes in <strong1>CSS.</strong1> Notice this change in size. Inspect the source to see why! What you might see is produced below.</p>
+    <div span class="resizing_text_example"> strong {font-size: 1.6em} <br><br> ... <br> <br> {p} 1. Percent font sizes in {strong}CSS{}/strong} Notice this change in size. Inspect the source to see why! What you might see is produced below.{/p} <br><br>...<br><br>
+    </div>
+    <br>
+    <p> Here is an example of nonconforming text under this criterion point. </p>
+    <div style="font-size:100%; width:120px; height:100px; overflow: hidden; border: thin solid gray;">
+ This example is not conforming because the container is set to clip the text. The content of the paragraph is truncated, meaning that it is contained but cutoff. This is WCAG a failure.
+</div>
+<br>
+</div>
+</div>
+<br>
+</body>
+</html>
